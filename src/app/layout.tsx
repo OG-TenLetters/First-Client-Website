@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Marcellus } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const marcellus = Marcellus({
+  subsets: ['latin'],
+  weight: ['400'], 
+  variable: '--font-marcellus', 
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,47 +23,50 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${marcellus.variable} antialiased`}
       >
-        <nav className="shadow-xl/30 bg-teal-500 w-full h-full py-7 px-6 rounded-b-sm flex justify-between">
+        <nav className="text-white shadow-xl/30  bg-teal-800 w-full h-f py-7 px-6 -mb-2 fixed top-0 z-20 rounded-b-sm flex justify-between">
           <div className="flex items-center gap-x-2">
-            <div className="bg-black rounded-full p-6 relative">
-              <h3 className="absolute top-[50%] left-[50%] translate-[-50%] text-white">
+            <div className="bg-teal-950 rounded-full p-6 relative">
+              <h3 className="absolute top-[50%] left-[50%] translate-[-50%]">
                 logo
               </h3>
             </div>
-            <h3 className="font-semibold mr-">LBB Logistics, LLC</h3>
+            <h3 className="font-semibold ml-1 text-[20px]">LBB Logistics, LLC</h3>
           </div>
-          <div className="font-semibold flex items-center">
-            <a className="px-2" href="">
-              <h3 className="link__hover-effect">Home</h3>
+          <div className="font-bold flex items-center text-teal-950 text-[20px]">
+            <a className="px-5" href="">
+              <h3 className="link__hover-effect link__hover-effect-teal">Home</h3>
             </a>
-            <a className="px-2" href="">
-              <h3 className="link__hover-effect">About</h3>
+            <a className="px-5" href="">
+              <h3 className="link__hover-effect link__hover-effect-teal">About</h3>
             </a>
-            <a className="px-2" href="">
-              <h3 className="link__hover-effect">Services</h3>
+            <a className="px-5" href="">
+              <h3 className="link__hover-effect link__hover-effect-teal">Services</h3>
             </a>
-            <a className="px-2" href="">
-              <h3 className="link__hover-effect">What Sets Us Apart</h3>
-              
+            <a className="px-5" href="">
+              <h3 className="link__hover-effect link__hover-effect-teal">What Sets Us Apart</h3>
             </a>
-            <a className="px-2" href="">
-              <h3 className="link__hover-effect">Contact</h3>
+            <a className="px-5" href="">
+              <h3 className="link__hover-effect link__hover-effect-teal">Contact</h3>
             </a>
           </div>
         </nav>
         {children}
 
-        <footer className=" shadow-xl/30 bg-teal-500 w-full py-7 px-6 rounded-t-sm ">
+        <footer className=" shadow-xl/30 bg-teal-800 w-full py-7 px-6 rounded-t-sm text-white">
           <div className="flex justify-center items-center">
             <div className="flex gap-x-2">
-              <h3 className="link__hover-effect font-semibold">Terms of Service</h3>
+              <h3 className="link__hover-effect font-semibold">
+                Terms of Service
+              </h3>
               <h3 className="link__hover-effect font-semibold">FAQ</h3>
             </div>
             <div className="relative items-center flex-col flex">
               <figure className="p-8 max-w-8 rounded-full bg-teal-950"></figure>
-              <h3 className="text-sm font-semibold w-full text-center max-w-28 absolute top-[50%] left-[50%] translate-[-50%] bg-teal-500">
+              <h3
+                className="text-black text-sm font-bold w-full text-center max-w-32 absolute top-[48%] left-[50%] translate-[-50%] bg-teal-800"
+              >
                 LBB Logistics, LLC
               </h3>
               <h3 className="text-xs mt-1">Copyright © LBB Logistics, LLC</h3>

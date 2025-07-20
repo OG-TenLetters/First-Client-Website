@@ -17,3 +17,7 @@
   left: 0;
   width: 100%;
 }
+
+.link__hover-effect-teal:after {
+    background-color: rgb(0, 32, 32);
+}
