@@ -27,7 +27,56 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="shadow-xl/30 bg-teal-500 w-full h-full py-7 px-6 rounded-b-sm flex justify-between">
+          <div className="flex items-center gap-x-2">
+            <div className="bg-black rounded-full p-6 relative">
+              <h3 className="absolute top-[50%] left-[50%] translate-[-50%] text-white">
+                logo
+              </h3>
+            </div>
+            <h3 className="font-semibold mr-">LBB Logistics, LLC</h3>
+          </div>
+          <div className="font-semibold flex items-center">
+            <a className="px-2" href="">
+              <h3 className="link__hover-effect">Home</h3>
+            </a>
+            <a className="px-2" href="">
+              <h3 className="link__hover-effect">About</h3>
+            </a>
+            <a className="px-2" href="">
+              <h3 className="link__hover-effect">Services</h3>
+            </a>
+            <a className="px-2" href="">
+              <h3 className="link__hover-effect">What Sets Us Apart</h3>
+              
+            </a>
+            <a className="px-2" href="">
+              <h3 className="link__hover-effect">Contact</h3>
+            </a>
+          </div>
+        </nav>
         {children}
+
+        <footer className=" shadow-xl/30 bg-teal-500 w-full py-7 px-6 rounded-t-sm ">
+          <div className="flex justify-center items-center">
+            <div className="flex gap-x-2">
+              <h3 className="link__hover-effect font-semibold">Terms of Service</h3>
+              <h3 className="link__hover-effect font-semibold">FAQ</h3>
+            </div>
+            <div className="relative items-center flex-col flex">
+              <figure className="p-8 max-w-8 rounded-full bg-teal-950"></figure>
+              <h3 className="text-sm font-semibold w-full text-center max-w-28 absolute top-[50%] left-[50%] translate-[-50%] bg-teal-500">
+                LBB Logistics, LLC
+              </h3>
+              <h3 className="text-xs mt-1">Copyright © LBB Logistics, LLC</h3>
+            </div>
+
+            <div className="flex gap-x-2">
+              <h3 className="link__hover-effect font-semibold">Contact Us</h3>
+              <h3 className="link__hover-effect font-semibold">Cookies</h3>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
