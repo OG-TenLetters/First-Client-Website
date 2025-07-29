@@ -49,3 +49,16 @@ html {
   #shiny-overlay {
     animation: sweep 2.5s infinite linear;
   }
+
+  .pointer-fix {
+    pointer-events: all;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
