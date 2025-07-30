@@ -43,7 +43,7 @@ const Navbar = () => {
       <nav
         style={{ width: `calc(100% - ${navMargin}px)` }}
         className={`${
-          isContactModalOpen && "pointer-events-none "
+          isContactModalOpen && "pointer-events-none opacity-70"
         } transition-all duration-300 backdrop-blur-sm bg-linear-to-tl from-teal-400/80 to-teal-950/80 text-white shadow-xl/30  w-full h-f py-4 px-6 -mb-2 fixed top-0 z-20 rounded-b-sm flex items-center justify-between`}
       >
         <div className=" flex items-center gap-x-2">
@@ -56,7 +56,8 @@ const Navbar = () => {
             LBB Logistics, LLC
           </h3>
         </div>
-        <div className="font-bold sm:flex hidden items-center text-teal-950 lg:text-[20px] flex-wrap justify-end sm:gap-y-0 gap-y-1">
+        <div
+        className={` transition-all duration-300 font-bold sm:flex hidden items-center text-teal-950 lg:text-[20px] flex-wrap justify-end sm:gap-y-0 gap-y-1`}>
           <a className="lg:px-5 px-2" href="#">
             <h3 className="link__hover-effect link__hover-effect-teal">Home</h3>
           </a>

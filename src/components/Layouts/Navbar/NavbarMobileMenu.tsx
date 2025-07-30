@@ -23,7 +23,7 @@ const NavbarMobileMenu = ({
       <div
         className={`${
           isNavModal && "scale-y-100 translate-y-[0%] opacity-100"
-        } scale-y-0 opacity-0 translate-y-[-50%] transition-all duration-300 fixed bg-gray-800/80 z-30 top-0 right-0 px-8 pb-12 pt-18 flex flex-col gap-y-4 rounded-b-2xl text-white text-center shadow-[inset_0_0_12px_4px_#5eead4]`}
+        } scale-y-0 opacity-0 translate-y-[-50%] transition-all duration-300 fixed bg-gray-900/80 z-30 top-0 right-0 px-8 pb-12 pt-18 flex flex-col gap-y-4 rounded-b-2xl text-white text-center shadow-[inset_0_0_12px_4px_#5eead4]`}
       >
         <div onClick={() => toggleNavMenu()}>
           <FontAwesomeIcon

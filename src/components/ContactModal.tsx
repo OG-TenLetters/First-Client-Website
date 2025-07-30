@@ -43,7 +43,7 @@ const ContactModal = ({
   return (
     <div
       className={`${
-        isContactModalOpen ? "opacity-100 scale-100" : "opacity-0 scale-50"
+        isContactModalOpen ? "opacity-100 scale-100" : "opacity-0 scale-50 pointer-events-none"
       } fixed transition-all duration-300 top-[50%] left-[50%] translate-[-50%] w-full max-w-4xl z-18`}
     >
       <div
