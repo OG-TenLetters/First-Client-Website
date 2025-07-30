@@ -23,7 +23,7 @@ const BenefitsCard = ({ title, desc }: BenefitsCardProps) => {
       >
         {title}
       </h2>
-      <p className="text-lg w-full max-w-120">{desc}</p>
+      <p className="sm:text-lg  w-full max-w-120">{desc}</p>
     </div>
   );
 };

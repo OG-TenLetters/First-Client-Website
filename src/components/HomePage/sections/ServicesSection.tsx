@@ -5,7 +5,7 @@ const ServicesSection = () => {
   return (
     <section id="services">
       <div className="bg-linear-to-l from-black/90 to-[#0b333d69] lg:py-20 md:pl-8 md:py-12 py-7 lg:px-20 md:px-12 px-7 backdrop-blur-xs w-full flex md:flex-row flex-col-reverse justify-between text-white">
-        <div className="md:w-[60%] w-full h-full flex flex-wrap md:flex-row flex-col justify-center gap-4 lg:pr-20 md:pr-8 sm:pr-7 pr-0">
+        <div className="md:w-[60%] w-full h-full flex sm:block hidden flex-wrap md:flex-row flex-col justify-center gap-4 lg:pr-20 md:pr-8 sm:pr-7 pr-0">
           <ServiceCard
             title={
               "FTL & LTL Coordination"
