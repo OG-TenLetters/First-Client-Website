@@ -2,7 +2,7 @@
 import { myAction } from "@/app/actions";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface ContactModalProps {
   isContactModalOpen: boolean;
@@ -44,7 +44,7 @@ const ContactModal = ({
     <div
       className={`${
         isContactModalOpen ? "opacity-100 scale-100" : "opacity-0 scale-50"
-      } absolute transition-all duration-300 top-[50%] left-[50%] translate-[-50%] bg-black w-full max-w-4xl z-18`}
+      } fixed transition-all duration-300 top-[50%] left-[50%] translate-[-50%] w-full max-w-4xl z-18`}
     >
       <div
         className={`absolute top-[50%] left-[50%] translate-[-50%] w-full flex p-20 text-white transition-all duration-300 delay-150 text-center -z-1 opacity-0 ${

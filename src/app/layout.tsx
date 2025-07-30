@@ -3,7 +3,7 @@ import "./globals.css";
 
 import React from "react";
 import { ModalProvider, useModal } from "./providers/ContactModalProvider";
-import Navbar from "@/components/Layouts/Navbar";
+import Navbar from "@/components/Layouts/Navbar/Navbar";
 import Footer from "@/components/Layouts/Footer";
 
 const inter = Inter({

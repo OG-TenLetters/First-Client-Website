@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
-        // Ensure this block is correct
         spectral: ['var(--font-spectral)'],
       },
     },

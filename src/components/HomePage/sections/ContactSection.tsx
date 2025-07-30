@@ -2,12 +2,10 @@ import Image from "next/image";
 import React from "react";
 import PhoneSvg from "../../../assets/Phone.svg";
 import EmailSvg from "../../../assets/Email.svg";
-import FacebookF from "../../../assets/facebookF.webp";
-import InstagramSvg from "../../../assets/instagram.svg";
-import TransportImg from "../../../assets/Transport-logistics.jpg";
+
 import USAImg from "../../../assets/USAlogistics.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faFacebookF, faInstagram, faLinkedinIn, faMeta } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn,} from "@fortawesome/free-brands-svg-icons";
 
 interface ContactSectionProps {
   isContactModalOpen: boolean;
