@@ -1,11 +1,7 @@
 import React from "react";
 import ServiceCard from "../ServiceCard";
 
-interface ServicesSectionProps {
-  isContactModalOpen: boolean;
-}
-
-const ServicesSection = ({ isContactModalOpen }: ServicesSectionProps) => {
+const ServicesSection = () => {
   return (
     <section id="services">
       <div className="bg-linear-to-l from-black/90 to-[#0b333d69] py-20 px-20 backdrop-blur-xs w-full flex justify-between text-white">

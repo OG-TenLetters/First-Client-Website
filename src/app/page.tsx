@@ -22,9 +22,9 @@ export default function Home() {
         isContactModalOpen={isContactModalOpen}
         toggleContactModal={toggleContactModal}
       />
-      <AboutSection isContactModalOpen={isContactModalOpen} />
-      <ServicesSection isContactModalOpen={isContactModalOpen} />
-      <DifferenceSection isContactModalOpen={isContactModalOpen} />
+      <AboutSection />
+      <ServicesSection />
+      <DifferenceSection />
       <ContactSection
         isContactModalOpen={isContactModalOpen}
         toggleContactModal={toggleContactModal}

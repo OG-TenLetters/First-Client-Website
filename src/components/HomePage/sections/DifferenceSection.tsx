@@ -1,11 +1,8 @@
 import React from "react";
 import BenefitsCard from "../BenefitsCard";
 
-interface DifferenceSectionProps {
-  isContactModalOpen: boolean;
-}
 
-const DifferenceSection = ({ isContactModalOpen }: DifferenceSectionProps) => {
+const DifferenceSection = () => {
   return (
     <section id="our_difference">
       <div className="py-12 bg-gray-100">
