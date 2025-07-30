@@ -2,7 +2,7 @@ import { Inter, Spectral } from "next/font/google";
 import "./globals.css";
 
 import React from "react";
-import { ModalProvider, useModal } from "./providers/ContactModalProvider";
+import { ModalProvider } from "./providers/ContactModalProvider";
 import Navbar from "@/components/Layouts/Navbar/Navbar";
 import Footer from "@/components/Layouts/Footer";
 

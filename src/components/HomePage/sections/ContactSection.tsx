@@ -17,7 +17,7 @@ interface ContactSectionProps {
 }
 
 const ContactSection = ({
-  isContactModalOpen,
+
   toggleContactModal,
 }: ContactSectionProps) => {
   return (
@@ -27,7 +27,7 @@ const ContactSection = ({
           <h4 className="mb-4 font-semibold text-teal-400">
             Ready for success?
           </h4>
-          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl lg:font-semibold sm:font-bold font-extrabold sm:tracking-normal tracking-wide mb-4">Let's Connect</h1>
+          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl lg:font-semibold sm:font-bold font-extrabold sm:tracking-normal tracking-wide mb-4">Let&rsquo;s Connect</h1>
           <p className="lg:text-2xl sm:text-xl  lg:font-normal font-semibold md:leading-9 leading-6 w-full mb-4">
             We invite you to contact LBB Logistics for all your freight needs.
             Our team is available 24/7 to provide you with reliable and

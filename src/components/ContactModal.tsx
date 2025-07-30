@@ -81,7 +81,7 @@ const ContactModal = ({
           action={myAction}
         >
           <h2 className="md:text-5xl sm:text-4xl text-3xl font-bold underline tracking-wide mb-8 text-[#fdfdfd]">
-            Let's Connect
+            Let&rsquo;s Connect
           </h2>
           <div className="flex md:flex-row flex-col md:w-auto w-full md:gap-8 gap-2 ">
             <div className="flex flex-col">
