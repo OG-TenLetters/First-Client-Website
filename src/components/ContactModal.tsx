@@ -44,7 +44,7 @@ const ContactModal = ({
     <div
       className={`${
         isContactModalOpen ? "opacity-100 scale-100" : "opacity-0 scale-50 pointer-events-none"
-      } fixed transition-all duration-300 top-[50%] left-[50%] translate-[-50%] w-full max-w-4xl z-18`}
+      } transition-all duration-300 w-full max-w-4xl z-18`}
     >
       <div
         className={`absolute top-[50%] left-[50%] translate-[-50%] w-full flex p-20 text-white transition-all duration-300 delay-150 text-center -z-1 opacity-0 ${
@@ -80,12 +80,12 @@ const ContactModal = ({
           onSubmit={handleFormSubmit}
           action={myAction}
         >
-          <h2 className="text-5xl font-bold underline tracking-wide mb-8 text-[#fdfdfd]">
+          <h2 className="md:text-5xl sm:text-4xl text-3xl font-bold underline tracking-wide mb-8 text-[#fdfdfd]">
             Let's Connect
           </h2>
-          <div className="flex gap-8 ">
+          <div className="flex md:flex-row flex-col md:w-auto w-full md:gap-8 gap-2 ">
             <div className="flex flex-col">
-              <h3 className="text-2xl font-bold mb-2"><span className="text-blue-300">*</span>Company:</h3>
+              <h3 className="md:text-2xl text-xl font-bold mb-2"><span className="text-blue-300">*</span>Company:</h3>
               <input
                 required
                 type="text"
@@ -93,7 +93,7 @@ const ContactModal = ({
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-2xl font-bold mb-2"><span className="text-blue-300">*</span>Name:</h3>
+              <h3 className="md:text-2xl text-xl font-bold mb-2"><span className="text-blue-300">*</span>Name:</h3>
 
               <input
                 onChange={(e) => setInputValue(e.target.value)}
@@ -105,7 +105,7 @@ const ContactModal = ({
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-2xl font-bold mb-2"><span className="text-blue-300">*</span>Email:</h3>
+              <h3 className="md:text-2xl text-xl font-bold mb-2"><span className="text-blue-300">*</span>Email:</h3>
               <input
                 required
                 type="email"
@@ -113,7 +113,7 @@ const ContactModal = ({
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-2xl font-bold mb-2">Phone:</h3>
+              <h3 className="md:text-2xl text-xl font-bold mb-2">Phone:</h3>
               <input
                 placeholder="Optional"
                 type="tel"
@@ -122,7 +122,7 @@ const ContactModal = ({
             </div>
           </div>
           <div className="flex flex-col w-full mt-6">
-            <h3 className="text-2xl font-bold mb-2"><span className="text-blue-300">*</span>Message:</h3>
+            <h3 className="md:text-2xl text-xl font-bold mb-2"><span className="text-blue-300">*</span>Message:</h3>
             <textarea
               required
               rows={4}

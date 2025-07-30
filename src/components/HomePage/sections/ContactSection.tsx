@@ -22,7 +22,7 @@ const ContactSection = ({
 }: ContactSectionProps) => {
   return (
     <section id="connect">
-      <div className="bg-gray-800 py-12 lg:px-20 md:px-12 px-7 relative flex justify-between items-center text-white">
+      <div className="bg-gray-800 py-12 lg:px-20 md:px-12 px-7 relative flex justify-between items-center text-white overflow-hidden">
         <div className="md:w-[60%] w-full max-w-200 relative lg:z-0 z-10">
           <h4 className="mb-4 font-semibold text-teal-400">
             Ready for success?
