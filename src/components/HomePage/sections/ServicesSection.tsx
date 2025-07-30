@@ -4,11 +4,11 @@ import ServiceCard from "../ServiceCard";
 const ServicesSection = () => {
   return (
     <section id="services">
-      <div className="bg-linear-to-l from-black/90 to-[#0b333d69] py-20 px-20 backdrop-blur-xs w-full flex justify-between text-white">
-        <div className="w-[60%] h-full flex flex-wrap justify-center gap-4 pr-20">
+      <div className="bg-linear-to-l from-black/90 to-[#0b333d69] lg:py-20 md:pl-8 md:py-12 py-7 lg:px-20 md:px-12 px-7 backdrop-blur-xs w-full flex md:flex-row flex-col-reverse justify-between text-white">
+        <div className="md:w-[60%] w-full h-full flex flex-wrap md:flex-row flex-col justify-center gap-4 lg:pr-20 md:pr-8 sm:pr-7 pr-0">
           <ServiceCard
             title={
-              "Full Truckload (FTL) & Less Than Truckload (LTL) Coordination"
+              "FTL & LTL Coordination"
             }
             desc={"Efficient coordination for all shipment sizes."}
           />
@@ -25,7 +25,7 @@ const ServicesSection = () => {
             desc={"Maximizing efficiency in transportation."}
           />
           <ServiceCard
-            title={"Driver Communication & Scheduling"}
+            title={"Driver Communi-cation & Scheduling"}
             desc={"Smooth coordination for timely deliveries."}
           />
           <ServiceCard
@@ -53,12 +53,12 @@ const ServicesSection = () => {
             desc={"Optional specialized services for unique cargo needs."}
           />
         </div>
-        <div className="w-[40%] bg-linear-to-l p-10 rounded-2xl to-gray-800/80">
-          <h4 className="mb-4 text-teal-300">
+        <div className="md:w-[40%] w-full bg-linear-to-l lg:p-10 md:pl-10 md:py-10 pr-4 sm:p-10 px-6 py-10 md:m-0 mb-12 rounded-2xl md:to-gray-800/80 to-black/70 from-gray-800/80">
+          <h4 className="mb-4 md:text-left text-right text-teal-300">
             Reliable Logistics, Unmatched Service
           </h4>
-          <h1 className="text-6xl mb-12 font-semibold">Our Services</h1>
-          <p className="text-2xl">
+          <h1 className=" md:text-left text-right xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:mb-12 mb-4 font-semibold">Our Services</h1>
+          <p className=" lg:text-2xl md:font-normal sm:text-lg text-md sm:font-semibold font-normal">
             LBB Logistics offers a wide range of freight brokerage and logistics
             services tailored to meet your shipping needs. Our team of
             experienced professionals is dedicated to providing customized
