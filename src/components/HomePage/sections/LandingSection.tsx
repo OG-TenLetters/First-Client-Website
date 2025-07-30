@@ -28,7 +28,7 @@ const LandingSection = ({
           <div className="md:block flex ">
             <button
               onClick={() => toggleContactModal()}
-              className="cursor-pointer active:translate-y-2 md:w-auto w-full active:shadow-none md:ml-6 mx-auto shadow-xl/20 bg-teal-950/30 shadow-teal-950 transition-all ease-in-out duration-300 hover:bg-teal-300 hover:border-teal-300 hover:text-teal-800 uppercase py-3 px-8 border-3 border-white mt-2 rounded-[12px] md:text-2xl text-lg font-bold"
+              className="cursor-pointer active:translate-y-2 md:w-auto w-full active:shadow-none md:ml-6 mx-auto shadow-xl/20 md:bg-teal-950/30 bg-transparent shadow-teal-950 transition-all ease-in-out duration-300 hover:bg-teal-300 hover:border-teal-300 hover:text-teal-800 uppercase py-3 px-8 border-3 border-white mt-2 rounded-[12px] md:text-2xl text-lg font-bold"
             >
               Contact US
             </button>

@@ -10,7 +10,7 @@ interface BenefitsCardProps {
 const BenefitsCard = ({ title, desc }: BenefitsCardProps) => {
   return (
     <div className="bg-white shadow-2xl/30 rounded-lg px-8 py-10 flex flex-col items-center">
-      <figure className="w-30">
+      <figure className="sm:w-30 w-20">
         <Image
           className="w-full h-full"
           alt="Benefits Image"
@@ -19,7 +19,7 @@ const BenefitsCard = ({ title, desc }: BenefitsCardProps) => {
       </figure>
       <h2
         className="border-b-3 border-b-black
-              text-3xl mb-4 font-bold w-full"
+              md:text-3xl sm:text-2xl text-xl mb-4 font-bold w-full"
       >
         {title}
       </h2>

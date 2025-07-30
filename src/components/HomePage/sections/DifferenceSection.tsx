@@ -6,13 +6,13 @@ const DifferenceSection = () => {
   return (
     <section id="our_difference">
       <div className="py-12 bg-gray-100">
-        <div className="px-20 flex flex-col text-center justify-center items-center gap-x-12">
-          <div className="w-[70%] flex flex-col items-center mb-16">
+        <div className="lg:px-20 md:px-12 px-7 flex flex-col text-center justify-center items-center gap-x-12">
+          <div className="lg:w-[70%] md:w-[95%] w-full flex flex-col items-center mb-16">
             <h4 className="mb-4 font-bold text-teal-600">
               Connecting Businesses Coast-to-Coast with Care
             </h4>
-            <h1 className="text-6xl font-semibold mb-12">What Sets Us Apart</h1>
-            <p className="text-2xl leading-9 w-[90%]">
+            <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-semibold font-bold sm:mb-12 mb-4">What Sets Us Apart</h1>
+            <p className="lg:text-2xl md:font-normal font-semibold sm:text-lg text-md  sm:leading-9 leading-5 md:w-[90%] w-full">
               At LBB Logistics, we stand out for our personalized service,
               real-time tracking, reliable carrier network, speedy quotes, 24/7
               availability, compliance-first mindset, flexible freight options,
@@ -26,8 +26,8 @@ const DifferenceSection = () => {
               logistics provider in the industry.
             </p>
           </div>
-            <h4 className="mb-4 tracking-widest capitalize font-semibold text-6xl">Superior customer service</h4>
-          <div className="flex gap-x-4">
+            <h4 className="mb-4 xl:text-6xl lg:text-5xl md:text-4xl text-3xl tracking-widest capitalize md:font-semibold font-bold">Superior customer service</h4>
+          <div className="flex md:flex-row flex-col gap-4">
             <BenefitsCard
               title={"Nationwide Reach"}
               desc={
