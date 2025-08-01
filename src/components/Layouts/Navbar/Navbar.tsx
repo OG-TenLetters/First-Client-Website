@@ -56,43 +56,44 @@ const Navbar = () => {
             LBB Logistics, LLC
           </h3>
         </div>
-        <div
+        <ul
         className={` transition-all duration-300 font-bold sm:flex hidden items-center text-teal-950 lg:text-[20px] flex-wrap justify-end sm:gap-y-0 gap-y-1`}>
-          <a className="lg:px-5 px-2" href="#">
-            <h3 className="link__hover-effect link__hover-effect-teal">Home</h3>
+            <li className="lg:px-5 px-2">
+          <a className="link__hover-effect link__hover-effect-teal " href="#">
+              Home
           </a>
-          <a className="lg:px-5 px-2" href="#about">
-            <h3 className="link__hover-effect link__hover-effect-teal">
+              </li>
+            <li className="lg:px-5 px-2">
+          <a className="link__hover-effect link__hover-effect-teal " href="#about">
               About
-            </h3>
           </a>
-          <a className="lg:px-5 px-2" href="#services">
-            <h3 className="link__hover-effect link__hover-effect-teal">
+            </li>
+            <li className="lg:px-5 px-2">
+          <a className="link__hover-effect link__hover-effect-teal " href="#services">
               Services
-            </h3>
           </a>
-          <a className="lg:px-5 px-2" href="#our_difference">
-            <h3 className="link__hover-effect link__hover-effect-teal">
+            </li>
+            <li className="lg:px-5 px-2">
+          <a className="link__hover-effect link__hover-effect-teal " href="#our_difference">
               What Sets Us Apart
-            </h3>
           </a>
-          <div
-            className="lg:px-5 px-2 cursor-pointer"
+            </li>
+          <li
+            className="lg:px-5 px-2   cursor-pointer"
             onClick={() => toggleContactModal()}
-          >
-            <h3 className="link__hover-effect link__hover-effect-teal">
-              Contact
-            </h3>
-          </div>
-        </div>
-        <div
+          ><h3 className="link__hover-effect link__hover-effect-teal">
+           Contact
+          </h3>
+          </li>
+        </ul>
+        <button
           onClick={() => toggleNavMenu()}
           className={`${
             isNavModal && "opacity-[0%]"
           } opacity-100 transition-all duration-300 delay-150 sm:hidden block`}
         >
           <FontAwesomeIcon className="text-3xl" icon={faBars} />
-        </div>
+        </button>
       </nav>
     </>
   );

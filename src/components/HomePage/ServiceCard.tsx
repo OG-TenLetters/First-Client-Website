@@ -19,8 +19,8 @@ const ServiceCard = ({ title, desc }: ServiceCardProps) => {
           ></Image>
         </figure>
         <div className="w-[80%] max-w-74 lg:text-left text-center">
-          <h3 className="font-bold w-full text-lg mb-2">{title}</h3>
-          <p className="font-normal text-sm sm:block hidden">{desc}</p>
+          <h2 className="font-bold w-full text-lg mb-2">{title}</h2>
+          <h3 className="font-normal text-sm sm:block hidden">{desc}</h3>
         </div>
       </div>
     </>

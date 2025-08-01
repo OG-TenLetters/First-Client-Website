@@ -11,7 +11,7 @@ const DifferenceSection = () => {
             <h4 className="mb-4 font-bold text-teal-600">
               Connecting Businesses Coast-to-Coast with Care
             </h4>
-            <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-semibold font-bold sm:mb-12 mb-4">What Sets Us Apart</h1>
+            <h2 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-semibold font-bold sm:mb-12 mb-4">What Sets Us Apart</h2>
             <p className="lg:text-2xl lg:font-normal font-semibold sm:text-lg text-md  sm:leading-9 leading-5 md:w-[90%] w-full">
               At LBB Logistics, we stand out for our personalized service,
               real-time tracking, reliable carrier network, speedy quotes, 24/7

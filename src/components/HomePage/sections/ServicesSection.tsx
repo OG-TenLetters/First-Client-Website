@@ -57,7 +57,7 @@ const ServicesSection = () => {
           <h4 className="mb-4 md:text-left text-right text-teal-300">
             Reliable Logistics, Unmatched Service
           </h4>
-          <h1 className=" md:text-left text-right xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:mb-12 mb-4 font-semibold">Our Services</h1>
+          <h2 className=" md:text-left text-right xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:mb-12 mb-4 font-semibold">Our Services</h2>
           <p className=" lg:text-2xl md:font-normal sm:text-lg text-md sm:font-semibold font-normal">
             LBB Logistics offers a wide range of freight brokerage and logistics
             services tailored to meet your shipping needs. Our team of

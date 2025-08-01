@@ -13,9 +13,9 @@ const AboutSection = () => {
             <h4 className=" text-teal-600 font-semibold mb-4">
               Specializing in Omnitransportation
             </h4>
-            <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl lg:font-semibold sm:font-bold font-extrabold sm:tracking-normal tracking-wide sm:mb-12 mb-4">
+            <h2 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl lg:font-semibold sm:font-bold font-extrabold sm:tracking-normal tracking-wide sm:mb-12 mb-4">
               Connecting Businesses <br /> Across the Country
-            </h1>
+            </h2>
             <p className="lg:text-2xl sm:text-xl  lg:font-normal font-semibold md:leading-9 leading-6 w-full">
               LBB Logistics was founded with a vision to simplify and strengthen
               supply chain connections. Our commitment to integrity,
