@@ -2,21 +2,19 @@ import Image from "next/image";
 import React from "react";
 import AboutImg from "../../../assets/Home_Office_Logistics_Working.webp";
 
-
-
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="py-12 bg-gray-100">
-        <div className="relative lg:px-20 md:px-15 px-7 flex md:flex-row flex-col items-center gap-x-12">
-          <div className="lg:w-[60%] md:w-[65%] w-full relative lg:z-0 z-10">
-            <h4 className=" text-teal-600 font-semibold mb-4">
+      <div className="bg-gray-100 py-12">
+        <div className="relative flex flex-col items-center gap-x-12 px-7 md:flex-row md:px-15 lg:px-20">
+          <div className="relative z-10 w-full md:w-[65%] lg:z-0 lg:w-[60%]">
+            <h2 className="mb-4 font-bold tracking-wide text-teal-800">
               Specializing in Omnitransportation
-            </h4>
-            <h2 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl lg:font-semibold sm:font-bold font-extrabold sm:tracking-normal tracking-wide sm:mb-12 mb-4">
-              Connecting Businesses <br /> Across the Country
             </h2>
-            <p className="lg:text-2xl sm:text-xl  lg:font-normal font-semibold md:leading-9 leading-6 w-full">
+            <h3 className="mb-4 text-xl font-extrabold tracking-wide sm:mb-12 sm:text-3xl sm:font-bold sm:tracking-normal md:text-4xl lg:text-5xl lg:font-semibold xl:text-6xl">
+              Connecting Businesses <br /> Across the Country
+            </h3>
+            <p className="w-full leading-6 font-semibold sm:text-xl md:leading-9 lg:text-2xl lg:font-normal">
               LBB Logistics was founded with a vision to simplify and strengthen
               supply chain connections. Our commitment to integrity,
               transparency, and consistency drives us to go above and beyond for
@@ -28,12 +26,16 @@ const AboutSection = () => {
               cornerstone of our approach to every shipment we handle.
             </p>
           </div>
-          <figure className="flex lg:w-[43%] md:w-[80%] lg:static absolute lg:right-auto right-0 lg:top-auto top-[50%] lg:translate-y-0 translate-y-[-50%] w-full lg:rounded-3xl overflow-hidden lg:shadow-2xl/40 shadow-none">
-          <div className="lg:static absolute bg-gradient-to-r from-gray-100 md:to-gray-100/70 to-gray-100/90 z-5 w-full h-full" ></div>
+          <figure className="absolute top-[50%] right-0 flex w-full translate-y-[-50%] overflow-hidden shadow-none md:w-[80%] lg:static lg:top-auto lg:right-auto lg:w-[43%] lg:translate-y-0 lg:rounded-3xl lg:shadow-2xl/40">
+            <div className="absolute z-5 h-full w-full bg-gradient-to-r from-gray-100 to-gray-100/90 md:to-gray-100/70 lg:static"></div>
             <Image
-              className="w-full"
+              className="h-auto w-full"
+              sizes="(min-width: 1024px) 43vw, (min-width: 768px) 80vw, 100vw"
+              width={1000}
+              height={700}
               src={AboutImg}
               alt="Hard at work preview"
+              priority
             ></Image>
           </figure>
         </div>

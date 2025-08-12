@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <Image
-        className="fixed w-full h-full -z-1"
+        className="fixed -z-1 h-full w-full"
         alt="Global Transportation Expertise Background Image"
         src={MidBg}
       ></Image>
@@ -44,53 +44,66 @@ const Navbar = () => {
         style={{ width: `calc(100% - ${navMargin}px)` }}
         className={`${
           isContactModalOpen && "pointer-events-none opacity-70"
-        } transition-all duration-300 backdrop-blur-sm bg-linear-to-tl from-teal-400/80 to-teal-950/80 text-white shadow-xl/30  w-full h-f py-4 px-6 -mb-2 fixed top-0 z-20 rounded-b-sm flex items-center justify-between`}
+        } h-f fixed top-0 z-20 -mb-2 flex w-full items-center justify-between rounded-b-sm bg-linear-to-tl from-teal-400/80 to-teal-950/80 px-6 py-4 text-white shadow-xl/30 backdrop-blur-sm transition-all duration-300`}
       >
-        <div className=" flex items-center gap-x-2">
-          <div className=" bg-teal-950 rounded-full p-6 relative">
+        <div className="flex items-center gap-x-2">
+          <div className="relative rounded-full bg-teal-950 p-6">
             <h3 className="absolute top-[50%] left-[50%] translate-[-50%]">
               logo
             </h3>
           </div>
-          <h3 className="font-semibold ml-1 lg:text-[20px] md:block sm:hidden block">
+          <h3 className="ml-1 block font-semibold sm:hidden md:block lg:text-[20px]">
             LBB Logistics, LLC
           </h3>
         </div>
         <ul
-        className={` transition-all duration-300 font-bold sm:flex hidden items-center text-teal-950 lg:text-[20px] flex-wrap justify-end sm:gap-y-0 gap-y-1`}>
-            <li className="lg:px-5 px-2">
-          <a className="link__hover-effect link__hover-effect-teal " href="#">
+          className={`hidden flex-wrap items-center justify-end gap-y-1 font-bold text-teal-950 transition-all duration-300 sm:flex sm:gap-y-0 lg:text-[20px]`}
+        >
+          <li className="px-2 lg:px-5">
+            <a className="link__hover-effect link__hover-effect-teal" href="#">
               Home
-          </a>
-              </li>
-            <li className="lg:px-5 px-2">
-          <a className="link__hover-effect link__hover-effect-teal " href="#about">
+            </a>
+          </li>
+          <li className="px-2 lg:px-5">
+            <a
+              className="link__hover-effect link__hover-effect-teal"
+              href="#about"
+            >
               About
-          </a>
-            </li>
-            <li className="lg:px-5 px-2">
-          <a className="link__hover-effect link__hover-effect-teal " href="#services">
+            </a>
+          </li>
+          <li className="px-2 lg:px-5">
+            <a
+              className="link__hover-effect link__hover-effect-teal"
+              href="#services"
+            >
               Services
-          </a>
-            </li>
-            <li className="lg:px-5 px-2">
-          <a className="link__hover-effect link__hover-effect-teal " href="#our_difference">
+            </a>
+          </li>
+          <li className="px-2 lg:px-5">
+            <a
+              className="link__hover-effect link__hover-effect-teal"
+              href="#our_difference"
+            >
               What Sets Us Apart
-          </a>
-            </li>
+            </a>
+          </li>
           <li
-            className="lg:px-5 px-2   cursor-pointer"
+            className="cursor-pointer px-2 lg:px-5"
             onClick={() => toggleContactModal()}
-          ><h3 className="link__hover-effect link__hover-effect-teal">
-           Contact
-          </h3>
+          >
+            <h3 className="link__hover-effect link__hover-effect-teal">
+              Contact
+            </h3>
           </li>
         </ul>
         <button
+              aria-label="Open Contact Form"
+
           onClick={() => toggleNavMenu()}
           className={`${
             isNavModal && "opacity-[0%]"
-          } opacity-100 transition-all duration-300 delay-150 sm:hidden block`}
+          } block opacity-100 transition-all delay-150 duration-300 sm:hidden`}
         >
           <FontAwesomeIcon className="text-3xl" icon={faBars} />
         </button>

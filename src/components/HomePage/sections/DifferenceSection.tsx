@@ -1,18 +1,19 @@
 import React from "react";
 import BenefitsCard from "../BenefitsCard";
 
-
 const DifferenceSection = () => {
   return (
     <section id="our_difference">
-      <div className="py-12 bg-gray-100">
-        <div className="lg:px-20 md:px-12 px-7 flex flex-col text-center justify-center items-center gap-x-12">
-          <div className="lg:w-[70%] md:w-[95%] w-full flex flex-col items-center mb-16">
-            <h4 className="mb-4 font-bold text-teal-600">
+      <div className="bg-gray-100 py-12">
+        <div className="flex flex-col items-center justify-center gap-x-12 px-7 text-center md:px-12 lg:px-20">
+          <div className="mb-16 flex w-full flex-col items-center md:w-[95%] lg:w-[70%]">
+            <h2 className="mb-4 font-bold tracking-wide text-teal-800">
               Connecting Businesses Coast-to-Coast with Care
-            </h4>
-            <h2 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-semibold font-bold sm:mb-12 mb-4">What Sets Us Apart</h2>
-            <p className="lg:text-2xl lg:font-normal font-semibold sm:text-lg text-md  sm:leading-9 leading-5 md:w-[90%] w-full">
+            </h2>
+            <h3 className="mb-4 text-3xl font-bold sm:mb-12 md:text-4xl md:font-semibold lg:text-5xl xl:text-6xl">
+              What Sets Us Apart
+            </h3>
+            <p className="text-md w-full leading-5 font-semibold sm:text-lg sm:leading-9 md:w-[90%] lg:text-2xl lg:font-normal">
               At LBB Logistics, we stand out for our personalized service,
               real-time tracking, reliable carrier network, speedy quotes, 24/7
               availability, compliance-first mindset, flexible freight options,
@@ -26,8 +27,10 @@ const DifferenceSection = () => {
               logistics provider in the industry.
             </p>
           </div>
-            <h4 className="mb-4 xl:text-6xl lg:text-5xl md:text-4xl text-3xl tracking-widest capitalize md:font-semibold font-bold">Superior customer service</h4>
-          <div className="flex md:flex-row flex-col gap-4">
+          <h4 className="mb-4 text-3xl font-bold tracking-widest capitalize md:text-4xl md:font-semibold lg:text-5xl xl:text-6xl">
+            Superior customer service
+          </h4>
+          <div className="flex flex-col gap-4 md:flex-row">
             <BenefitsCard
               title={"Nationwide Reach"}
               desc={
@@ -47,7 +50,6 @@ const DifferenceSection = () => {
               }
             />
           </div>
-          
         </div>
       </div>
     </section>

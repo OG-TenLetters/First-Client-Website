@@ -94,6 +94,8 @@ const ContactModal = ({
               <input
                 required
                 type="text"
+                aria-label="Enter your company's name here"
+
                 className="text-teal-950 text-lg w-full placeholder:text-[#dbdbdb] outline-none focus:border-b-3 border-teal-900 px-2 py-0.5 font-semibold rounded-sm bg-teal-600 inset-shadow-teal-500 inset-shadow-sm"
               />
             </div>
@@ -107,6 +109,7 @@ const ContactModal = ({
                 required
                 name="name"
                 value={inputValue}
+                aria-label="Enter your name here"
                 type="text"
                 className="text-teal-950 text-lg w-full placeholder:text-[#dbdbdb] outline-none focus:border-b-3 border-teal-900 px-2 py-0.5 font-semibold rounded-sm bg-teal-600 inset-shadow-teal-500 inset-shadow-sm"
               />
@@ -118,6 +121,7 @@ const ContactModal = ({
               <input
                 required
                 type="email"
+                aria-label="Enter your email address here included with the @. Example: @gmail.com, @company.org, @agency.gov"
                 className="text-teal-950 text-lg w-full placeholder:text-[#dbdbdb] outline-none focus:border-b-3 border-teal-900 px-2 py-0.5 font-semibold rounded-sm bg-teal-600 inset-shadow-teal-500 inset-shadow-sm"
               />
             </div>
@@ -125,6 +129,8 @@ const ContactModal = ({
               <h3 className="md:text-2xl text-xl font-bold mb-2">Phone:</h3>
               <input
                 placeholder="Optional"
+                aria-label="Enter your phone number here. This is optional"
+
                 type="tel"
                 className="text-teal-950 text-lg w-full placeholder:text-[#dbdbdb] outline-none focus:border-b-3 border-teal-900 px-2 py-0.5 font-semibold rounded-sm bg-teal-600 inset-shadow-teal-500 inset-shadow-sm"
               />
@@ -137,6 +143,8 @@ const ContactModal = ({
             <textarea
               required
               rows={4}
+                aria-label="Enter your response to the following question here. What is you and your company's mission?"
+
               placeholder="What is you and your company's mission?"
               name="messagebox"
               id="contactmessage"
@@ -146,6 +154,8 @@ const ContactModal = ({
           <button
             type="submit"
             id="contact-submit"
+            aria-label="Send Contact and Message to LBB Logistics"
+            
             className="hover:bg-teal-700 hover:border-white hover:text-teal-100 hover:shadow-teal-700 active:border-gray-300 active:bg-teal-800 active:text-teal-200 active:shadow-none active:translate-y-2 transition-all duration-300 shadow-xl/30 shadow-teal-950 bg-teal-900 border-teal-950 border-2 mt-6 py-3 w-full max-w-72 rounded-lg font-bold tracking-wide text-2xl text-white"
           >
             Send Message

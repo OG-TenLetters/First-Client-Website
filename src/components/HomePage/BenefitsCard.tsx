@@ -9,21 +9,18 @@ interface BenefitsCardProps {
 
 const BenefitsCard = ({ title, desc }: BenefitsCardProps) => {
   return (
-    <div className="bg-white shadow-2xl/30 rounded-lg px-8 py-10 flex flex-col items-center">
-      <figure className="sm:w-30 w-20">
+    <div className="flex flex-col items-center rounded-lg bg-white px-8 py-10 shadow-2xl/30">
+      <figure className="w-20 sm:w-30">
         <Image
-          className="w-full h-full"
+          className="h-full w-full"
           alt="Benefits Image"
           src={BenefitsSvg}
         ></Image>
       </figure>
-      <h2
-        className="border-b-3 border-b-black
-              md:text-3xl sm:text-2xl text-xl mb-4 font-bold w-full"
-      >
+      <h3 className="mb-4 w-full border-b-3 border-b-black text-xl font-bold sm:text-2xl md:text-3xl">
         {title}
-      </h2>
-      <h3 className="sm:text-lg  w-full max-w-120">{desc}</h3>
+      </h3>
+      <h4 className="w-full max-w-120 sm:text-lg">{desc}</h4>
     </div>
   );
 };

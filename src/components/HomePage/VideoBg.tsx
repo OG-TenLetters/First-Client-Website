@@ -1,9 +1,14 @@
-"use client"
+"use client";
 
 import React, { useEffect, useRef } from "react";
 
+interface VideoBgProps {
+  webmSrc: string;
+  mp4Src: string;
+  posterSrc: string;
+}
 
-const VideoBg = () => {
+const VideoBg = ({ webmSrc, mp4Src, posterSrc }: VideoBgProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -13,14 +18,18 @@ const VideoBg = () => {
   }, []);
   return (
     <video
-    ref={videoRef}
-      className="absolute h-full w-full object-cover z-0 brightness-80 saturate-170"
+      ref={videoRef}
+      className="absolute z-0 h-full w-full object-cover brightness-80 saturate-170"
       autoPlay
       loop
       muted
       playsInline
-      src="/Bg_Truck.mp4"
-    />
+      poster={posterSrc}
+    >
+      <source src={webmSrc} type="webm" />
+      <source src={mp4Src} type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
   );
 };
 

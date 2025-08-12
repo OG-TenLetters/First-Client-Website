@@ -10,17 +10,17 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, desc }: ServiceCardProps) => {
   return (
     <>
-      <div className="hover:brightness-120 hover:shadow-2xl/100 transition-all duration-300 xl:w-[30%] lg:w-[40%] md:w-[39%] w-full shadow-xl/100 flex lg:flex-row md:flex-col flex-row lg:justify-baseline justify-center items-center px-4 sm:py-6 py-2 bg-[#163f49cb] rounded-2xl">
-        <figure className="md:w-[20%] w-[10%] lg:mr-4 mr-0 lg:mb-0 mb-4">
+      <div className="flex w-full flex-row items-center justify-center rounded-2xl bg-[#163f49cb] px-4 py-2 shadow-xl/100 transition-all duration-300 hover:shadow-2xl/100 hover:brightness-120 sm:py-6 md:w-[39%] md:flex-col lg:w-[40%] lg:flex-row lg:justify-baseline xl:w-[30%]">
+        <figure className="mr-0 mb-4 w-[10%] md:w-[20%] lg:mr-4 lg:mb-0">
           <Image
-            className="md:scale-140 scale-100 flex justify-center items-center"
+            className="flex scale-100 items-center justify-center md:scale-140"
             alt="Guaranteed Badge"
             src={BadgeSvg}
           ></Image>
         </figure>
-        <div className="w-[80%] max-w-74 lg:text-left text-center">
-          <h2 className="font-bold w-full text-lg mb-2">{title}</h2>
-          <h3 className="font-normal text-sm sm:block hidden">{desc}</h3>
+        <div className="w-[80%] max-w-74 text-center lg:text-left">
+          <h3 className="mb-2 w-full text-lg font-bold">{title}</h3>
+          <h4 className="hidden text-sm font-normal sm:block">{desc}</h4>
         </div>
       </div>
     </>
