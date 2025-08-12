@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <Image
-        className="fixed -z-1 h-full w-full"
+        className="fixed -z-1 h-full xl:w-full w-auto object-cover"
         alt="Global Transportation Expertise Background Image"
         src={MidBg}
       ></Image>
