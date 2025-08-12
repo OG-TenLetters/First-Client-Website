@@ -46,7 +46,7 @@ const ContactModal = ({
         isContactModalOpen
           ? "opacity-100 scale-100"
           : "opacity-0 scale-50 pointer-events-none"
-      } transition-all duration-300 w-full max-w-4xl z-18`}
+      } transition-all duration-300 w-full max-w-4xl z-25`}
     >
       <div
         className={`absolute top-[50%] left-[50%] translate-[-50%] w-full flex p-20 text-white transition-all duration-300 delay-150 text-center -z-1 opacity-0 ${

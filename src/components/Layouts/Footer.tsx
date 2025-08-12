@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   const { toggleContactModal } = useModal();
   return (
-    <footer className="relative z-30 shadow-xl/30 bg-linear-to-tl from-teal-950 to-teal-700 w-full py-4 px-6 rounded-t-lg text-white">
+    <footer className="relative z-20 shadow-xl/30 bg-linear-to-tl from-teal-950 to-teal-700 w-full py-4 px-6 rounded-t-lg text-white">
       <div className="flex justify-center items-center">
         <ul className="flex gap-x-2">
           <li className="sm:block hidden text-lg link__hover-effect link__hover-effect-teal font-extrabold">
