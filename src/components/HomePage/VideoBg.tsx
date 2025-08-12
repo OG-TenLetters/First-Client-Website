@@ -28,7 +28,7 @@ const VideoBg = ({ webmSrc, mp4Src, posterSrc }: VideoBgProps) => {
     >
       <source src={webmSrc} type="webm" />
       <source src={mp4Src} type="video/mp4" />
-      Sorry, your browser doesn't support embedded videos.
+      Sorry, your browser doesn&rsquo;t support embedded videos.
     </video>
   );
 };
