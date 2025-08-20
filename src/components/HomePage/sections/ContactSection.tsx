@@ -46,7 +46,7 @@ const ContactSection = ({ toggleContactModal }: ContactSectionProps) => {
               src={EmailSvg}
               alt="Email Icon"
             ></Image>
-            :`` sommonne@lbblogists.com
+            : sommonne@lbblogistics.com
           </div>
           <div className="flex flex-col items-center gap-x-12 sm:flex-row">
             <button
@@ -62,7 +62,7 @@ const ContactSection = ({ toggleContactModal }: ContactSectionProps) => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Link to Facebook page"
-                href="https://www.facebook.com/sommonne"
+                href="https://www.facebook.com/people/Freight-Broker/61578764967715/"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 p-2 text-3xl font-extrabold transition-all duration-300 hover:scale-115 hover:text-white">
                   <FontAwesomeIcon icon={faFacebookF} />

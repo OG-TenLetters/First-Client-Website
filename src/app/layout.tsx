@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Spectral } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { ModalProvider } from "./providers/ContactModalProvider";
 import Navbar from "@/components/Layouts/Navbar/Navbar";
 import Footer from "@/components/Layouts/Footer";
@@ -20,7 +21,8 @@ const spectral = Spectral({
 
 export const metadata: Metadata = {
   title: "LBB Logistics LLC - National Freight Transportation Company",
-  description: "LBB Logistics is a trusted freight brokerage and logistics services company dedicated to providing efficient and customized freight solutions nationwide.",
+  description:
+    "LBB Logistics is a trusted freight brokerage and logistics services company dedicated to providing efficient and customized freight solutions nationwide.",
 };
 
 export default function RootLayout({
@@ -36,6 +38,7 @@ export default function RootLayout({
         <ModalProvider>
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
         </ModalProvider>
       </body>

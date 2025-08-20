@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <Image
-        className="fixed -z-1 h-full xl:w-full w-auto object-cover"
+        className="fixed -z-1 h-full w-auto object-cover xl:w-full"
         alt="Global Transportation Expertise Background Image"
         src={MidBg}
       ></Image>
@@ -46,15 +46,15 @@ const Navbar = () => {
           isContactModalOpen && "pointer-events-none opacity-70"
         } h-f fixed top-0 z-20 -mb-2 flex w-full items-center justify-between rounded-b-sm bg-linear-to-tl from-teal-400/80 to-teal-950/80 px-6 py-4 text-white shadow-xl/30 backdrop-blur-sm transition-all duration-300`}
       >
-        <div className="flex items-center gap-x-2">
-          <div className="relative rounded-full bg-teal-950 p-6">
+        <div className="group flex items-center gap-x-2">
+          <div className="group:hover relative z-2 rounded-full bg-teal-950 p-6">
             <h3 className="absolute top-[50%] left-[50%] translate-[-50%]">
               logo
             </h3>
           </div>
-          <h3 className="ml-1 block font-semibold sm:hidden md:block lg:text-[20px]">
+          <h1 className="ml-1 translate-x-0 scale-100 font-semibold opacity-100 transition-all duration-300 sm:-translate-x-25 sm:scale-50 sm:opacity-0 sm:group-hover:-translate-x-0 sm:group-hover:scale-100 sm:group-hover:opacity-100 md:translate-x-0 md:scale-100 md:opacity-100 lg:text-[20px]">
             LBB Logistics, LLC
-          </h3>
+          </h1>
         </div>
         <ul
           className={`hidden flex-wrap items-center justify-end gap-y-1 font-bold text-teal-950 transition-all duration-300 sm:flex sm:gap-y-0 lg:text-[20px]`}
@@ -98,8 +98,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button
-              aria-label="Open Contact Form"
-
+          aria-label="Open Contact Form"
           onClick={() => toggleNavMenu()}
           className={`${
             isNavModal && "opacity-[0%]"

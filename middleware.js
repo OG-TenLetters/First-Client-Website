@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export function middleware(request) {
-  const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
+  const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const cspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
@@ -17,8 +17,11 @@ export function middleware(request) {
   `;
 
   const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-nonce', nonce);
-  requestHeaders.set('Content-Security-Policy', cspHeader.replace(/\s{2,}/g, ' ').trim());
+  requestHeaders.set("x-nonce", nonce);
+  requestHeaders.set(
+    "Content-Security-Policy",
+    cspHeader.replace(/\s{2,}/g, " ").trim(),
+  );
 
   return NextResponse.next({
     headers: requestHeaders,
@@ -31,10 +34,10 @@ export function middleware(request) {
 export const config = {
   matcher: [
     {
-      source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
+      source: "/((?!api|_next/static|_next/image|favicon.ico).*)",
       missing: [
-        { type: 'header', key: 'next-router-prefetch' },
-        { type: 'header', key: 'purpose', value: 'prefetch' },
+        { type: "header", key: "next-router-prefetch" },
+        { type: "header", key: "purpose", value: "prefetch" },
       ],
     },
   ],
